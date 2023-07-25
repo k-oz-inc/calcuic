@@ -1,0 +1,174 @@
+/* This Global.css affects all Components */
+p {
+    color: #17252A;
+    font-size: small;
+}
+
+.ruler-line {
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color: #d0d0d0;
+}
+
+.card {
+    width: 350px;
+    height: auto;
+    z-index: 1;
+    background-color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-header {
+    color: #2B7A78;
+    background-color: #DEF2F1;
+    height: 35px;
+    margin-top: 0;
+}
+
+.results-card-header {
+    font-size: 1rem;
+    color: #2B7A78;
+}
+
+form {
+    text-decoration: none;
+}
+
+.form-label {
+    color: #2B7A78;
+    font-size: medium;
+}
+
+.close-button {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    padding: 0;
+    border: none;
+    background-color: rgba(255, 254, 254, 0);
+    transition: transform .2s ease-in-out;
+}
+
+.close-button:hover {
+    background-color: rgba(203, 255, 252, 0.4);
+    transform: rotate(360deg);
+}
+
+input {
+    font-size: medium;
+    color: #2B7A78;
+    height: 35px;
+    border: 1px solid #2B7A78;
+    border-radius: 7px;
+    padding: 0 10px 0 10px;
+    margin-top: 10px;
+    outline: none;
+}
+
+input::placeholder {
+    font-size: medium;
+    opacity: 0.5;
+    color: #2B7A78;;
+}
+
+.calculate-button {
+    font-size: medium;
+    color: white;
+    background-color: #2B7A78;
+    border: none;
+    border-radius: 50px;
+    width: 200px;
+    padding: 10px 0 10px 0;
+    margin-top: 10px;
+  }
+
+  .calculate-button:hover {
+    background-color: #3a8786;
+  }
+
+  .calculate-button.inactive {
+    background-color: #b3d7d7;
+  }
+
+/* remove increase and decrease arrows from input field
+Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Form-field Symbols */
+.form-field {
+    position: relative;
+}
+
+.symbol {
+    font-size: 1rem;
+   color:#2B7A78; 
+}
+  
+.form-field div.symbol {
+    position: absolute;
+    top: 51%;
+    right: 5px; /* Adjust as needed */
+    transform: translateY(-50%);
+}
+
+.currency {
+    font-size: 1rem;
+    color:#2B7A78; 
+}
+
+.form-field div.currency {
+    position: absolute;
+    top: 53%;
+    left: 10px; /* Adjust as needed */
+    transform: translateY(-50%);
+    background-color: rgba(222, 242, 241, 0.5);
+}
+
+.symbol-feet {
+    font-size: 1rem;
+    color:#2B7A78; 
+}
+
+.form-field div.symbol-feet {
+    position: absolute;
+    top: 53%;
+    left: 75px; /* Adjust as needed */
+    transform: translateY(-50%);
+    /* background-color: rgba(222, 242, 241, 0.5); */
+}
+
+.form-field div.label {
+    position: absolute;
+    top: 53%;
+    left: 10px; /* Adjust as needed */
+    transform: translateY(-50%);
+    background-color: rgba(222, 242, 241, 0.5);
+}
+
+.caret-default {
+    caret-color: auto;
+}
+
+.caret-transparent {
+    color: transparent;
+    caret-color: auto;
+}
+/* ENDS */
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 90vw
+    }
+}

@@ -1,0 +1,13 @@
+.buttons {
+    font-size: medium;
+    border: none;
+    border-radius: 50px;
+    width: 200px;
+    padding: 10px 0 10px 0;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.title-headers {
+    color: #DEF2F1;
+}

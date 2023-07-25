@@ -1,25 +1,33 @@
 .App {
   text-align: center;
+  position: relative;
+  overflow: visible;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 11vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dogica-font-face {
+  font-family: "dogicapixel";
+  color: #17252A;
+}
+
+.slogan {
+  color: #236563;
+  -webkit-animation: fadein 2.6s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2.6s; /* Firefox < 16 */
+  -ms-animation: fadein 2.6s; /* Internet Explorer */
+  -o-animation: fadein 2.6s; /* Opera < 12.1 */
+  animation: fadein 2.6s;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* min-height: 100dvh; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -28,11 +36,92 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.buttons {
+  font-size: medium;
+  border: none;
+  border-radius: 50px;
+  width: 200px;
+  padding: 10px 0 10px 0;
+  margin-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.buttons:hover {
+  background-color: #cbfffc;
+}
+
+.buttons:active {
+  width: 180px;
+  padding: 8px 0 8px 0;
+}
+
+.title-headers {
+  color: #DEF2F1;
+}
+
+.footer {
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  bottom: 0;
+  color: #DEF2F1;
+}
+
+.heart {
+  font-size: large;
+  color: red;
+}
+
+.typewriter h5 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .05em; /* Adjust as needed */
+  animation: 
+    typing 1.3s steps(40, end),
+    blink-caret .85s step-end infinite;
+}
+
+@media screen and (max-width: 600px) {
+  .App-logo {
+    height: 13vmin;
+    pointer-events: none;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+/* Slogan - FadeIn Effect */
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }

@@ -1,0 +1,79 @@
+.suggested-percentage {
+    color: #17252A;
+    font-size: 1rem;
+    background-color: #DEF2F1;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+}
+
+.suggested-percentage:hover {
+    color: #17252A;
+    background-color: #d3e9e7;
+}
+
+.suggested-percentage:active {
+    color: white;
+    background-color: #2B7A78;  
+}
+
+.common-tip-prompt {
+    background-color: #DEF2F1;
+}
+
+.tip-calculate-button {
+    font-size: medium;
+    color: white;
+    background-color: #2B7A78;
+    border: none;
+    border-radius: 50px;
+    width: 55%;
+    padding: 10px 0 10px 0;
+    margin-top: 10px;
+  }
+
+  .tip-calculate-button:hover {
+    background-color: #3a8786;
+  }
+
+  .tip-calculate-button.inactive {
+    background-color: #b3d7d7;
+  }
+
+  .total {
+    color: #2B7A78;
+    font-size: 1.3rem;
+  }
+
+  .tip-results-card {
+    position: absolute;
+    top: 225px;
+    z-index: 0;
+    width: 350px;
+    background-color: #DEF2F1;
+    border-radius: 7px 5px 5px 7px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: top 2s;
+    
+  }
+
+  .tip-results-card.active {
+    top: 615px;
+  }
+
+  .tip-results {
+    color: #2B7A78;
+  }
+
+  @media screen and (max-width: 600px) {
+    .card {
+        width: 90vw;
+    }
+    .tip-results-card {
+        width: 90vw;
+    }
+    .tip-results-card.active {
+        top: 590px;
+      }
+}
